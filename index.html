@@ -16,7 +16,27 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <span class="logo-text">Upfront</span>
+                    <svg width="160" height="40" viewBox="0 0 160 40" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="digital-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#7C3AED;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#A855F7;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Abstract 'U' with forward motion -->
+                        <g id="abstract-u">
+                            <!-- Bold U shape -->
+                            <path d="M8 10 L8 22 Q8 28 14 28 L20 28 Q26 28 26 22 L26 10" 
+                                  fill="none" stroke="url(#digital-gradient)" stroke-width="4" stroke-linecap="round"/>
+                            <!-- Motion lines (forward momentum) -->
+                            <line x1="30" y1="14" x2="35" y2="14" stroke="url(#digital-gradient)" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+                            <line x1="30" y1="20" x2="37" y2="20" stroke="url(#digital-gradient)" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+                            <line x1="30" y1="26" x2="35" y2="26" stroke="url(#digital-gradient)" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+                        </g>
+                        <!-- Text with gradient -->
+                        <text x="45" y="26" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="url(#digital-gradient)">Upfront</text>
+                    </svg>
                 </div>
                 <nav class="nav">
                     <a href="#why" class="nav-link">Why Upfront</a>
