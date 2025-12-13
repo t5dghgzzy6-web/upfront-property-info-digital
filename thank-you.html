@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're on the List! - Upfront Property Information</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #7C3AED 0%, #A855F7 50%, #EC4899 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            background: white;
+            border-radius: 24px;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .icon {
+            font-size: 80px;
+            margin-bottom: 24px;
+            animation: bounce 1s ease-in-out;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #7C3AED 0%, #EC4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .perks {
+            background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+            border-radius: 16px;
+            padding: 24px;
+            margin: 32px 0;
+            text-align: left;
+        }
+
+        .perks h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 16px;
+        }
+
+        .perks ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .perks li {
+            padding: 8px 0;
+            color: #4b5563;
+            font-size: 15px;
+        }
+
+        .perks li::before {
+            content: '✓ ';
+            color: #7C3AED;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #7C3AED 0%, #EC4899 100%);
+            color: white;
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 16px;
+            margin-top: 16px;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(124, 58, 237, 0.3);
+        }
+
+        .note {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid #e5e7eb;
+            color: #9ca3af;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🎉</div>
+        <h1>You're on the List!</h1>
+        <p>
+            Thanks for joining the Upfront waitlist. We've sent you an email with everything 
+            you need to know about what's coming.
+        </p>
+
+        <div class="perks">
+            <h2>🎁 Your Early Access Perks</h2>
+            <ul>
+                <li><strong>50% off</strong> your first property pack (worth £149)</li>
+                <li><strong>Priority access</strong> to new properties as they're listed</li>
+                <li><strong>Beta features</strong> testing – help shape the product</li>
+                <li><strong>Direct support</strong> from our founding team</li>
+                <li><strong>Lifetime discount</strong> – 20% off all future property packs</li>
+            </ul>
+        </div>
+
+        <p style="font-size: 16px; color: #4b5563;">
+            Check your inbox (and spam folder) for your welcome email with all the details.
+        </p>
+
+        <a href="index.html" class="btn">Back to Home</a>
+
+        <p class="note">
+            Questions? Reply to the welcome email – we read every message.
+        </p>
+    </div>
+
+    <script>
+        // Confetti effect (optional enhancement)
+        setTimeout(() => {
+            // Could add confetti library here if desired
+        }, 100);
+    </script>
+</body>
+</html>
